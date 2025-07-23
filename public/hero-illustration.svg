@@ -1,0 +1,99 @@
+<svg width="320" height="200" viewBox="0 0 320 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0e7ef;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e40af;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="320" height="200" fill="url(#bgGradient)"/>
+  
+  <!-- Left side - Chaos/Problem -->
+  <g opacity="0.7">
+    <!-- Scattered cards -->
+    <rect x="20" y="40" width="12" height="16" rx="2" fill="#ef4444" transform="rotate(-15 26 48)"/>
+    <rect x="35" y="35" width="12" height="16" rx="2" fill="#f59e0b" transform="rotate(10 41 43)"/>
+    <rect x="50" y="45" width="12" height="16" rx="2" fill="#ef4444" transform="rotate(-5 56 53)"/>
+    
+    <!-- Dice -->
+    <rect x="15" y="70" width="16" height="16" rx="2" fill="#6b7280" stroke="#374151" stroke-width="1"/>
+    <circle cx="19" cy="74" r="1.5" fill="#ffffff"/>
+    <circle cx="27" cy="82" r="1.5" fill="#ffffff"/>
+    
+    <!-- Money symbols -->
+    <text x="25" y="110" font-family="Arial" font-size="12" fill="#ef4444" font-weight="bold">$</text>
+    <text x="45" y="105" font-family="Arial" font-size="10" fill="#ef4444" font-weight="bold">$</text>
+    <text x="35" y="120" font-family="Arial" font-size="8" fill="#ef4444" font-weight="bold">$</text>
+    
+    <!-- Chaotic lines -->
+    <path d="M10 130 Q30 110 50 135 Q70 150 90 125" stroke="#ef4444" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M15 140 Q35 120 55 145 Q75 160 95 135" stroke="#f59e0b" stroke-width="1.5" fill="none" opacity="0.6"/>
+  </g>
+  
+  <!-- Center - Transformation arrow -->
+  <g>
+    <!-- Arrow body -->
+    <path d="M140 100 L180 100" stroke="#3b82f6" stroke-width="4" stroke-linecap="round"/>
+    <!-- Arrow head -->
+    <path d="M175 95 L180 100 L175 105" stroke="#3b82f6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Transformation sparkles -->
+    <circle cx="160" cy="85" r="2" fill="#3b82f6" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0.2;0.8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="160" cy="115" r="1.5" fill="#3b82f6" opacity="0.6">
+      <animate attributeName="opacity" values="0.6;0.1;0.6" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Right side - Clarity/Solution -->
+  <g opacity="0.9">
+    <!-- Organized cards in a stack -->
+    <rect x="220" y="40" width="14" height="18" rx="2" fill="#10b981" stroke="#059669" stroke-width="1"/>
+    <rect x="222" y="42" width="14" height="18" rx="2" fill="#10b981" stroke="#059669" stroke-width="1"/>
+    <rect x="224" y="44" width="14" height="18" rx="2" fill="#10b981" stroke="#059669" stroke-width="1"/>
+    
+    <!-- Piggy bank -->
+    <ellipse cx="240" cy="85" rx="12" ry="8" fill="#fbbf24"/>
+    <rect x="235" y="77" width="10" height="8" rx="2" fill="#fbbf24"/>
+    <circle cx="240" cy="85" r="3" fill="#92400e"/>
+    <rect x="238" y="83" width="4" height="4" rx="1" fill="#92400e"/>
+    
+    <!-- Growth chart -->
+    <path d="M210 130 L220 125 L230 120 L240 115 L250 110 L260 105" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="220" cy="125" r="2" fill="#10b981"/>
+    <circle cx="230" cy="120" r="2" fill="#10b981"/>
+    <circle cx="240" cy="115" r="2" fill="#10b981"/>
+    <circle cx="250" cy="110" r="2" fill="#10b981"/>
+    <circle cx="260" cy="105" r="2" fill="#10b981"/>
+    
+    <!-- Organized money -->
+    <rect x="225" y="140" width="20" height="12" rx="2" fill="#10b981" opacity="0.8"/>
+    <text x="235" y="148" font-family="Arial" font-size="8" fill="#ffffff" font-weight="bold" text-anchor="middle">$</text>
+    
+    <!-- Peaceful lines -->
+    <path d="M200 150 Q220 145 240 150 Q260 155 280 150" stroke="#10b981" stroke-width="2" fill="none" opacity="0.8"/>
+  </g>
+  
+  <!-- AI/Technology elements -->
+  <g opacity="0.7">
+    <!-- Circuit board pattern -->
+    <rect x="150" y="30" width="20" height="2" fill="#3b82f6"/>
+    <rect x="150" y="35" width="2" height="10" fill="#3b82f6"/>
+    <rect x="168" y="35" width="2" height="10" fill="#3b82f6"/>
+    <rect x="150" y="47" width="20" height="2" fill="#3b82f6"/>
+    
+    <!-- AI brain nodes -->
+    <circle cx="160" cy="160" r="2" fill="#3b82f6"/>
+    <circle cx="155" cy="165" r="1.5" fill="#3b82f6"/>
+    <circle cx="165" cy="165" r="1.5" fill="#3b82f6"/>
+    <line x1="160" y1="160" x2="155" y2="165" stroke="#3b82f6" stroke-width="1"/>
+    <line x1="160" y1="160" x2="165" y2="165" stroke="#3b82f6" stroke-width="1"/>
+  </g>
+</svg> 
