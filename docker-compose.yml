@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: antigambling-app
+    restart: unless-stopped
+    # The app runs on port 3000 internally. We don't need to expose it
+    # to the host, as the tunnel will connect to it on the docker network.
+    # The service name 'app' will be its hostname on the default network.
+
+  tunnel:
+    image: cloudflare/cloudflared:latest
+    container_name: cloudflare-tunnel
+    restart: unless-stopped
+    depends_on:
+      - app
+    command: tunnel --no-autoupdate run --token ${CLOUDFLARE_TUNNEL_TOKEN}
+    # The tunnel connects to the 'app' service on port 3000.
+    # In your Cloudflare Zero Trust dashboard, you need to configure the
+    # public hostname for this tunnel to point to the service http://app:3000

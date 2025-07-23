@@ -1,5 +1,8 @@
 // Profil Muhammad Haggy dari Universitas Indonesia
 import Image from 'next/image';
+import hagiImage from '../images/author/hagi/hagi.png';
+import uiImage from '../images/logoUniv/UI.png';
+
 
 export default function AuthorHagi() {
   return (
@@ -8,7 +11,7 @@ export default function AuthorHagi() {
         <h1 style={{ textAlign: 'center', marginBottom: 24 }}>Author</h1>
         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <Image
-            src={require('../images/author/hagi/hagi.png')}
+            src={hagiImage}
             alt="Muhammad Haggy"
             width={200}
             height={200}
@@ -17,7 +20,7 @@ export default function AuthorHagi() {
           <h2 style={{ margin: 0, fontSize: 24 }}>Muhammad Haggy</h2>
           <div style={{ display: 'flex', alignItems: 'center', marginTop: 10 }}>
             <Image
-              src={require('../images/logoUniv/UI.png')}
+              src={uiImage}
               alt="Universitas Indonesia Logo"
               width={40}
               height={40}

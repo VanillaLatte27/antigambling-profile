@@ -1103,7 +1103,7 @@ export default function Home() {
               justifyContent: 'center',
               background: 'transparent'
             }}>
-              <Image src={require('./images/author/hagi/hagi.png')} alt="Muhammad Haggy" width={180} height={180} style={{ objectFit: 'cover' }} />
+              <Image src="/images/author/hagi/hagi.png" alt="Muhammad Haggy" width={180} height={180} style={{ objectFit: 'cover' }} />
             </div>
             <div style={{ fontWeight: 700, fontSize: 20, marginBottom: 4, color: '#fff' }}>
               Muhammad Haggy
@@ -1127,7 +1127,7 @@ export default function Home() {
               justifyContent: 'center',
               background: 'transparent'
             }}>
-              <Image src={require('./images/author/image.png')} alt="Candra Kus Khoiri Wicaksono" width={180} height={180} style={{ objectFit: 'cover' }} />
+              <Image src="/images/author/image.png" alt="Candra Kus Khoiri Wicaksono" width={180} height={180} style={{ objectFit: 'cover' }} />
             </div>
             <div style={{ fontWeight: 700, fontSize: 20, marginBottom: 4, color: '#fff' }}>
               Candra Kus Khoiri Wicaksono
